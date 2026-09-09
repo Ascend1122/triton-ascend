@@ -107,8 +107,8 @@ pip install -e .
 # Check out the specified version of LLVM source code and apply patches
 git clone --no-checkout https://github.com/llvm/llvm-project.git
 cd llvm-project
-git checkout fad3272286528b8a491085183434c5ad4b59ab92
-wget https://raw.githubusercontent.com/triton-lang/triton-ascend/refs/heads/main/third_party/ascend/patch/llvm_patch_f6ded0b.patch
+git checkout f6ded0be897e2878612dd903f7e8bb85448269e5
+wget https://raw.githubusercontent.com/triton-lang/triton-ascend/main/third_party/ascend/patch/llvm_patch_f6ded0b.patch
 git apply llvm_patch_f6ded0b.patch
 
 
