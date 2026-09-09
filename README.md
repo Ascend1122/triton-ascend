@@ -111,7 +111,6 @@ git checkout f6ded0be897e2878612dd903f7e8bb85448269e5
 wget https://raw.githubusercontent.com/triton-lang/triton-ascend/main/third_party/ascend/patch/llvm_patch_f6ded0b.patch
 git apply llvm_patch_f6ded0b.patch
 
-
 export LLVM_INSTALL_PREFIX=/path/to/llvm-install
 
 # Build a custom LLVM version
