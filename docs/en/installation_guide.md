@@ -6,7 +6,7 @@
 
 **Hardware Requirements**
 
-- Ascend products: Atlas A2/A3/950 series are supported.
+- Ascend products: Atlas A2 products\Atlas A3 products\Ascend 950PR&950DT products.
 
 - NPU configuration: at least 32 GB of memory per card is recommended.
 
