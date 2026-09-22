@@ -1,6 +1,6 @@
 # Installation Guide
 
-**Triton-Ascend** is an optimized version of Triton adapted for Huawei Ascend processors. It is mainly used to provide efficient kernel auto-tuning, operator compilation, and deployment capabilities, and supports the Ascend Atlas A2/A3/950 series products. While remaining compatible with core Triton syntax, it is deeply optimized for Ascend NPU features, including automatic parsing of kernel parameters, optimized memory access logic, and improved secure deployment mechanisms.
+**Triton-Ascend** is an optimized version of Triton adapted for Huawei Ascend processors. It is mainly used to provide efficient kernel auto-tuning, operator compilation, and deployment capabilities, and supports the Ascend Atlas A2 products\Atlas A3 products\Ascend 950PR&950DT products. While remaining compatible with core Triton syntax, it is deeply optimized for Ascend NPU features, including automatic parsing of kernel parameters, optimized memory access logic, and improved secure deployment mechanisms.
 
 ## Environment Preparation
 
@@ -406,7 +406,7 @@ Answer: X86 and Arm use different versions of community Triton installation pack
 
 **Question 6: How to confirm the chip type**
 
-You can use the npu-smi command to view the NPU model on the system. For example, in the output of the npu-smi info command, "910B4" corresponds to chip type A2 (Ascend 910b series):
+You can use the npu-smi command to view the NPU model on the system. For example, in the output of the npu-smi info command, "910B4" corresponds to chip type Atlas A2 products:
 
 ```Text
 root@localhost:/# npu-smi  info
