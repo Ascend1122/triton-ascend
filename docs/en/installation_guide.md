@@ -1,12 +1,12 @@
 # Installation Guide
 
-**Triton-Ascend** is an optimized version of Triton adapted for Huawei Ascend processors. It is mainly used to provide efficient kernel auto-tuning, operator compilation, and deployment capabilities, and supports the Ascend Atlas A2 products\Atlas A3 products\Ascend 950PR&950DT products. While remaining compatible with core Triton syntax, it is deeply optimized for Ascend NPU features, including automatic parsing of kernel parameters, optimized memory access logic, and improved secure deployment mechanisms.
+**Triton-Ascend** is an optimized version of Triton adapted for Huawei Ascend processors. It provides automatic kernel tuning, operator compilation and deployment capabilities. It supports Ascend Atlas A2 products/Atlas A3 products/Ascend 950PR&950DT products, is compatible with core Triton syntax, and has been deeply optimized for Ascend NPU features, including automatic parsing of kernel parameters, optimized memory access logic, and improved secure deployment mechanisms.
 
 ## Environment Preparation
 
 **Hardware Requirements**
 
-- Ascend products: Atlas A2 products\Atlas A3 products\Ascend 950PR&950DT products.
+- Ascend products: Atlas A2 products/Atlas A3 products\Ascend 950PR&950DT products.
 
 - NPU configuration: at least 32 GB of memory per card is recommended.
 
