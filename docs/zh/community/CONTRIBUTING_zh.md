@@ -27,7 +27,7 @@ git commit -s -m "your commit message"
 
 - 单元测试指南
 
-  请使用Triton Ascend社区统一的单元测试风格，python建议的单元测试风格是[pytest](http://www.pytest.org/en/latest/)，C++建议的单元测试风格是[Googletest Primer](https://github.com/google/googletest/blob/main/docs/primer.md)。测试用例的设计意图应该通过它的注释名称来反映。Python 侧测试用例设计可参考[gather测试用例](https://github.com/triton-lang/triton-ascend/blob/main/third_party/ascend/unittest/pytest_ut/test_gather.py)、[layer_norm测试用例](https://github.com/triton-lang/triton-ascend/blob/main/third_party/ascend/tutorials/05-layer-norm.py)；编译器/MLIR 转换（C++ 后端）的测试用例可参考 [lit MLIR 测试目录](https://github.com/triton-lang/triton-ascend/tree/main/third_party/ascend/unittest/Conversion) 下的示例。
+  请使用Triton-Ascend社区统一的单元测试风格，python建议的单元测试风格是[pytest](http://www.pytest.org/en/latest/)，C++建议的单元测试风格是[Googletest Primer](https://github.com/google/googletest/blob/main/docs/primer.md)。测试用例的设计意图应该通过它的注释名称来反映。Python 侧测试用例设计可参考[gather测试用例](https://github.com/triton-lang/triton-ascend/blob/main/third_party/ascend/unittest/pytest_ut/test_gather.py)、[layer_norm测试用例](https://github.com/triton-lang/triton-ascend/blob/main/third_party/ascend/tutorials/05-layer-norm.py)；编译器/MLIR 转换（C++ 后端）的测试用例可参考 [lit MLIR 测试目录](https://github.com/triton-lang/triton-ascend/tree/main/third_party/ascend/unittest/Conversion) 下的示例。
 
 - 重构指南
 
@@ -35,13 +35,13 @@ git commit -s -m "your commit message"
 
 ### Fork-Pull开发模式
 
-1、Fork Triton Ascend项目
+1、Fork Triton-Ascend项目
 
-在您向Triton Ascend项目提交自己的代码之前，请确保已经将Triton Ascend项目Fork到您自己的存储库。后续您将在自己Fork的项目上进行开发，并通过Pull Request的方式合并到Triton-Ascend项目。这意味着Triton-Ascend仓库和您自己的仓库之间存在并行开发，因此请注意保持存储库之间的一致性。
+在您向Triton-Ascend项目提交自己的代码之前，请确保已经将Triton-Ascend项目Fork到您自己的存储库。后续您将在自己Fork的项目上进行开发，并通过Pull Request的方式合并到Triton-Ascend项目。这意味着Triton-Ascend仓库和您自己的仓库之间存在并行开发，因此请注意保持存储库之间的一致性。
 
 2、克隆远程仓库
 
-使用git克隆您fork的Triton Ascend项目&添加上游仓库upstream：
+使用git克隆您fork的Triton-Ascend项目&添加上游仓库upstream：
 
 ```bash
 git clone https://github.com/{your_forked_repo}/triton-ascend.git && cd triton-ascend && git submodule update --init --depth 1
@@ -50,7 +50,7 @@ git remote add upstream https://github.com/triton-lang/triton-ascend.git
 
 3、本地环境开发代码
 
-在开发您的代码之前，您需要根据[Triton Ascend安装指南](https://github.com/triton-lang/triton-ascend/blob/main/docs/zh/installation_guide.md)搭建开发环境。
+在开发您的代码之前，您需要根据[Triton-Ascend安装指南](https://github.com/triton-lang/triton-ascend/blob/main/docs/zh/installation_guide.md)搭建开发环境。
 
 为避免多个分支间的不一致问题，请创建新的本地开发分支进行新特性的开发：
 
@@ -60,7 +60,7 @@ git fetch upstream       # Fetch the latest code from the upstream repository
 git rebase upstream/main # Rebase onto the latest upstream trunk
 ```
 
-以main分支为例，Triton Ascend可能会根据需要创建版本分支或下游开发分支。当您创建完分支&同步上游main分支更新后，就可以开始开发您的代码了。
+以main分支为例，Triton-Ascend可能会根据需要创建版本分支或下游开发分支。当您创建完分支&同步上游main分支更新后，就可以开始开发您的代码了。
 
 4、代码更改自测
 
@@ -79,9 +79,9 @@ git commit -s -m "your commit message"
 git push origin {your_new_branch_name}
 ```
 
-6、向Triton Ascend主仓创建Pull Request
+6、向Triton-Ascend主仓创建Pull Request
 
-代码推送至您的远程仓库后，您需要在您的新分支和Triton Ascend main分支之间新建Pull Request。完成新建合并请求后，“Jenkins CI”将自动设置为您构建流水线测试。您的Pull Request请尽快合并到上游main分支，以降低合并风险。
+代码推送至您的远程仓库后，您需要在您的新分支和Triton-Ascend main分支之间新建Pull Request。完成新建合并请求后，“Jenkins CI”将自动设置为您构建流水线测试。您的Pull Request请尽快合并到上游main分支，以降低合并风险。
 
 ### 代码门禁异常处理
 
@@ -105,7 +105,7 @@ git push origin {your_new_branch_name}
 
 在报告问题时，请参考以下格式：
 
-- 您环境里使用的软件版本（Triton Ascend、python、OS等）？
+- 您环境里使用的软件版本（Triton-Ascend、python、OS等）？
 - 这是一个错误报告还是功能请求？
 - 您报告的是什么样的问题，添加对应的标签以便在问题仪表盘上突出显示？
 - 发生了什么？

@@ -218,7 +218,7 @@ proton --instrument=[instrumentation pass] script.py
 ```
 
 When profiling in the command line mode, the `proton.start` and `proton.finalize` functions are automatically called before and after the script execution. Any `proton.start` and `proton.finalize` functions in the script are ignored. Also, in the command line mode, only a single *session* is supported.
-Therefore, `proton.deactivate(session=1)` is invalid, while `proton.deactivate(session=0)` is valid.
+Therefore, `proton.deactivate(session_id=1)` is invalid, while `proton.deactivate(session_id=0)` is valid.
 
 ### Visualizing the profile data
 

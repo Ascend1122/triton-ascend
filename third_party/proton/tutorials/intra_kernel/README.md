@@ -1,6 +1,6 @@
 # Proton Intra-Kernel Profiler Tutorial
 
-A comprehensive tutorial demonstrating how to use the Proton intra-kernel profiler for detailed performance analysis of CPU kernels written in Triton DSL and Gluon DSL.
+A comprehensive tutorial demonstrating how to use the Proton intra-kernel profiler for detailed performance analysis of GPU kernels written in Triton DSL and Gluon DSL.
 
 ## Overview
 
