@@ -42,7 +42,7 @@ msprof op simulator --kernel-name=_layer_norm_fwd_fused --soc-version={soc-versi
 
 - 注：上述示例`soc-version=Ascend910B3`。下面列表基于CANN 9.2.0 版本整理输出。
 
-| Ascend 910系列 | Ascend 310/310P系列 | Ascend 310B系列 | Ascend 610系列 | Ascend 920 系列 | Ascend 950 系列 |
+| Ascend 910系列 | Ascend 310/310P系列 | Ascend 310B系列 | Ascend 610系列 | Ascend 920系列 | Ascend 950系列 |
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | Ascend910A | Ascend310 | Ascend310B1 | Ascend610 | Ascend920A | Ascend950PR_950x |
 | Ascend910B | Ascend310P1 | Ascend310B2 | Ascend610Lite | - | Ascend950PR_950y |
@@ -134,7 +134,7 @@ export TRITON_DISABLE_LINE_INFO=0
 > - 搬运指令同时存在时，会存在共享带宽的情况，并不能每条都以接近理论带宽的速率搬运数据。比如，当MTE2/MTE3同时进行GM读写时，搬运流水线的耗时应该是（MTE2搬运量 + MTE3搬运量）/ GM带宽。
 > - 搬运不同大小的数据块时，对带宽的利用率（有效带宽/理论带宽）不一样。针对每次搬运数据量较小的情况，实测性能达不到理论带宽。
 >
-- 计算相关流水（Cube/Vector/Scalar等）的理论耗时 = 计算数据量（单位：Element） / 理论算力。例如：某款AI处理器对float数据类型的Vector理论峰值算力为11.06 TOPS，想要进行一次32k float类型的Element单指令计算，计算的理论耗时是32k / 11.06TOPS = 3ns（按照1k = 1000来计算）。
+- 计算相关流水（Cube/Vector/Scalar等）的理论耗时 = 计算数据量（单位：Element）/ 理论算力。例如：某款AI处理器对float数据类型的Vector理论峰值算力为11.06 TOPS，想要进行一次32k float类型的Element单指令计算，计算的理论耗时是32k / 11.06TOPS = 3ns（按照1k = 1000来计算）。
 
 <a id="locating-bottlenecks"></a>
 

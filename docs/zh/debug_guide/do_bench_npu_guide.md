@@ -37,7 +37,7 @@ print(f"Kernel execution time: {ms} ms")
 
 这表示：
 
-- `funcs` 的语义与社区 `do_bench` 相同，代表要进行基准测试的可调用函数；
+- `fn` 的语义与社区 `do_bench` 相同，代表要进行基准测试的可调用函数；
 - `do_bench_npu` 在 Triton-Ascend 上的意思是“让 NPU 性能分析工具捕获纯 Device 侧 kernel 执行时间”，从而有效消除 Host 侧开销对测量的影响。
 
 ## 参数说明
@@ -178,4 +178,4 @@ export TRITON_BENCH_METHOD="npu"
 - 调用  `do_bench_npu(fn)` 获取纯 Device 侧执行时间；
 - 如果需要在复杂函数中隔离特定 kernel，请使用 `target_kernel_name`；
 - 如果需要稳定的最坏情况性能基线，请启用 `clear_l2_cache=True`；
-- 确保安装了 `mspti` ，以保持与社区 `do_bench` 的运行时性能持平。
+- 确保安装了 `mspti`，以保持与社区 `do_bench` 的运行时性能持平。
