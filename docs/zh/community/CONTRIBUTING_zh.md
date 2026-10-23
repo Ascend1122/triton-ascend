@@ -37,7 +37,7 @@ git commit -s -m "your commit message"
 
 1、Fork Triton-Ascend项目
 
-在您向Triton-Ascend项目提交自己的代码之前，请确保已经将Triton-Ascend项目Fork到您自己的存储库。后续您将在自己Fork的项目上进行开发，并通过Pull Request的方式合并到Triton-Ascend项目。这意味着Triton-Ascend仓库和您自己的仓库之间存在并行开发，因此请注意保持存储库之间的一致性。
+在您向Triton-Ascend项目提交自己的代码之前，请确保已经将Triton-Ascend项目Fork到您自己的仓库。后续您将在自己Fork的项目上进行开发，并通过Pull Request的方式合并到Triton-Ascend项目。这意味着Triton-Ascend仓库和您自己的仓库之间存在并行开发，因此请注意保持仓库之间的一致性。
 
 2、克隆远程仓库
 
